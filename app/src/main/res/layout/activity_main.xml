@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Makes all the content come up in a vertical line
+     android:orientation="vertical"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textViewLine1"
+        android:textColor="@color/textViewColor"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+<!-- This will make the TextView take entire parents width
+     android:layout_width="match_parent"-->
+<!-- This will make the TextView take only contents width
+    android:layout_width="wrap_content"-->
+
+<!-- if we have two different padding specs like this, then only the first one will be given preference
+    android:padding="16dp"
+    android:paddingTop="32dp"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textViewLine2"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:padding="16dp"
+        android:paddingTop="32dp"
+        android:background="@color/textViewColor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textViewLine3"
+        android:textColor="@color/textViewColor"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+<!--  this doesn't change the background of the button
+      android:background="@color/black"-->
+<!--  this does change the background of the button
+      android:backgroundTint="@color/black"-->
+
+    <Button
+        android:id="@+id/dateSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/buttonText"
+        android:textColor="@color/buttonBg"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/selectedDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="14/9/2021"
+        android:textColor="@color/textViewColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Selected date"
+        android:textColor="@color/buttonBg"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/ageInMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1440"
+        android:textColor="@color/textViewColor"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="In minutes till date"
+        android:textColor="@color/buttonBg"
+        android:textSize="20sp"/>
+
+</LinearLayout>
